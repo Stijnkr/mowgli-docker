@@ -43,8 +43,8 @@ export OM_USE_RELATIVE_POSITION=False
 
 # If needed, uncomment and set to coordinates near you (these default coordinates are somewhere in Germany).
 # This will be your map origin!
-export OM_DATUM_LAT=48.8831951
-export OM_DATUM_LONG=2.1661984
+export OM_DATUM_LAT=51.477165175
+export OM_DATUM_LONG=4.952353898
 # export OM_DATUM_LAT=48.13724720055111
 # export OM_DATUM_LONG=11.575605219552623
 
@@ -54,11 +54,11 @@ export OM_GPS_PROTOCOL=UBX
 # NTRIP Settings
 # Set to False if using external radio plugged into the Ardusimple board.
 export OM_USE_NTRIP=True
-export OM_NTRIP_HOSTNAME=caster.centipede.fr
+export OM_NTRIP_HOSTNAME=192.168.178.212
 export OM_NTRIP_PORT=2101
-export OM_NTRIP_USER=centipede
-export OM_NTRIP_PASSWORD=centipede
-export OM_NTRIP_ENDPOINT=OUIL
+export OM_NTRIP_USER=rtk
+export OM_NTRIP_PASSWORD=rtk
+export OM_NTRIP_ENDPOINT=rtk
 
 # If you want to use F9R's sensor fusion, set this to true (you will also need to set DATUM_LAT and DATUM_LONG.
 # Consider this option unstable, since I don't have the F9R anymore, so I'm not able to test this.
@@ -70,7 +70,7 @@ export OM_USE_F9R_SENSOR_FUSION=False
 ##    Mower Logic Settings    ##
 ################################
 # The distance to drive forward AFTER reaching the second docking point
-export OM_DOCKING_DISTANCE=1.0
+export OM_DOCKING_DISTANCE=0.96
 
 # The distance to drive for undocking. This needs to be large enough for the robot to have GPS reception
 export OM_UNDOCK_DISTANCE=1.0
@@ -84,14 +84,14 @@ export OM_OUTLINE_COUNT=4
 export OM_TOOL_WIDTH=0.13
 
 # Voltages for battery to be considered full or empty
-export OM_BATTERY_EMPTY_VOLTAGE=23.0
+export OM_BATTERY_EMPTY_VOLTAGE=22.6
 export OM_BATTERY_FULL_VOLTAGE=28.0
 
 # Mower motor temperatures to stop and start mowing
 export OM_MOWING_MOTOR_TEMP_HIGH=80.0
 export OM_MOWING_MOTOR_TEMP_LOW=40.0
 
-export OM_GPS_WAIT_TIME_SEC=10.0
+export OM_GPS_WAIT_TIME_SEC=5.0
 export OM_GPS_TIMEOUT_SEC=5.0
 export OM_GPS_PORT=/dev/gps
 export OM_GPS_BAUDRATE=921600
@@ -102,21 +102,21 @@ export OM_GPS_BAUDRATE=921600
 export OM_ENABLE_MOWER=true
 
 # True to start mowing automatically. If this is false, you need to start manually by pressing the start button
-export OM_AUTOMATIC_MODE=0
+export OM_AUTOMATIC_MODE=1
 
 export OM_OUTLINE_OFFSET=0.05
 
 export OM_NO_COMMS=true
 
 # Set default GPS antenna offset
-export OM_ANTENNA_OFFSET_X=0.3
+export OM_ANTENNA_OFFSET_X=0.11
 export OM_ANTENNA_OFFSET_Y=0.0
 
 # Set distance between wheels in m
 export OM_WHEEL_DISTANCE_M=0.325
 
 # Set default ticks/m
-export OM_WHEEL_TICKS_PER_M=300.0
+export OM_WHEEL_TICKS_PER_M=338.15
 
 # Heatmap UNSET or om_gps_accuracy
 export OM_HEATMAP_SENSOR_IDS=om_gps_accuracy
